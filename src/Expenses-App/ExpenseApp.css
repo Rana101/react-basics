@@ -1,9 +1,8 @@
-.button-container{
+.button-block{
   text-align: center;
 }
 
-.button-container button {
-  margin-top: 50px;
+.button-block button {
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -14,19 +13,19 @@
   margin-right: 1rem;
 }
 
-.button-container button:hover,
-.button-container button:active {
+.button-block button:hover,
+.button-block button:active {
   background-color: #510674;
   border-color: #510674;
 }
 
-.button-container button.alternative {
+.button-block button.alternative {
   color: #220131;
   border-color: transparent;
   background-color: transparent;
 }
 
-.button-container button.alternative:hover,
-.button-container button.alternative:active {
+.button-block button.alternative:hover,
+.button-block button.alternative:active {
   background-color: #ddb3f8;
 }
