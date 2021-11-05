@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import ExpenseApp from './Expenses-App/ExpenseApp';
+import GoalsApp from './Goals-App/GoalsApp';
 
 const App = () => {
   //to show and hide Expense App
@@ -25,7 +26,7 @@ const App = () => {
         {/* Expense APP  */}
         {showExpenseApp && <ExpenseApp control={closeExpenseAppUI} />}
         {/* Goals APP  */}
-        {showGoalsApp && <ExpenseApp control={closeGoalsAppUI} />}
+        {showGoalsApp && <GoalsApp control={closeGoalsAppUI} />}
       </div>
     </div>
   );
