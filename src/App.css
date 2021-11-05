@@ -1,9 +1,22 @@
-.button-container{
-  text-align: center;
+.btn-group{
+margin-left: 50rem;
 }
 
-.button-container button {
-  margin-top: 50px;
+.btn-group button{
+  text-align: center;
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer;
+  width: 20%;
+  display: block; 
+  margin-top:50px;
+  padding: 1rem 2rem;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  font: inherit;
+}
+
+/* .button {
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -12,21 +25,21 @@
   color: white;
   border-radius: 12px;
   margin-right: 1rem;
-}
+} */
 
-.button-container button:hover,
-.button-container button:active {
+.button:hover,
+.button:active {
   background-color: #510674;
   border-color: #510674;
 }
 
-.button-container button.alternative {
+.button.alternative {
   color: #220131;
   border-color: transparent;
   background-color: transparent;
 }
 
-.button-container button.alternative:hover,
-.button-container button.alternative:active {
+.button.alternative:hover,
+.button.alternative:active {
   background-color: #ddb3f8;
 }
