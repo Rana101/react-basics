@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './ExpenseApp.css';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
+import Wrapper from '../lib/Helpers/Wrapper/Wrapper';
 
 
 const DUMMY_EXPENSES = [
@@ -41,13 +42,13 @@ const ExpenseApp = (props) => {
   }
 
   return (
-    <div>
+    <Wrapper>
       <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses expenses ={expenses} />
       <div className="button-block">
         <button onClick={props.control}>Close Expense APP</button>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 export default ExpenseApp;

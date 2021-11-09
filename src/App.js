@@ -3,6 +3,7 @@ import './App.css';
 import ExpenseApp from './Expenses-App/ExpenseApp';
 import GoalsApp from './Goals-App/GoalsApp';
 import PersonalDetailsApp from './Personal-Details-App/PersonalDetailsApp';
+import Wrapper from './lib/Helpers/Wrapper/Wrapper';
 
 const App = () => {
   //to show and hide Expense App
@@ -21,7 +22,7 @@ const App = () => {
     const closePersonalDetailsAppUI = () => setShowDetailsApp(false);
 
   return (
-    <div>
+    <Wrapper>
       <div className="btn-group">
         {/* Expense APP  */}
         {!showExpenseApp && !showGoalsApp && !showDetailsApp && <button className="button" onClick={openExpenseAppUI}>Open Expense App</button>}
@@ -38,7 +39,7 @@ const App = () => {
         {/* Personal Details APP  */}
         {showDetailsApp && <PersonalDetailsApp control={closePersonalDetailsAppUI} />}
       </div>
-    </div>
+    </Wrapper>
   );
 }
 export default App;
