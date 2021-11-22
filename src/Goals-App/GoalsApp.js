@@ -4,7 +4,6 @@ import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalLi
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import Button from './components/UI/Button/Button';
 import './GoalsApp.css';
-import Wrapper from '../lib/Helpers/Wrapper/Wrapper';
 
 const GoalsApp = (props) => {
   const [courseGoals, setCourseGoals] = useState([
@@ -38,7 +37,7 @@ const GoalsApp = (props) => {
   }
 
   return (
-    <Wrapper>
+    <React.Fragment>
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
@@ -55,7 +54,7 @@ const GoalsApp = (props) => {
       <div className="button-container">
       <Button type="button" onClick={props.control} >Close Goals App</Button>
       </div>
-    </Wrapper>
+    </React.Fragment>
   );
 };
 

@@ -4,8 +4,6 @@ import React, { useState } from 'react';
 import Button from '../../UI/Button/Button';
 import styles from './CourseInput.module.css';
 
-import Wrapper from '../../../../lib/Helpers/Wrapper/Wrapper';
-
 // const FormControl = styled.div`
 //   margin: 0.5rem 0;
 
@@ -54,7 +52,7 @@ const CourseInput = (props) => {
   };
 
   return (
-		<Wrapper>
+		<React.Fragment>
 			<form onSubmit={formSubmitHandler}>
 				{/* <FormControl invalid={!isValid}>
 					<label >Course Goal</label>
@@ -66,7 +64,7 @@ const CourseInput = (props) => {
         </div>
 				<Button type="submit">Add Goal</Button>
 			</form>
-		</Wrapper>
+		</React.Fragment>
   );
 };
 
