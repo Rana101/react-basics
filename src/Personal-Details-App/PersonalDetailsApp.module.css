@@ -5,3 +5,10 @@
   background: #1f1f1f;
 }
 
+
+.button-container {
+  text-align: center;
+  vertical-align: bottom;
+  margin-bottom: 50px;
+  padding: 20px;
+}
