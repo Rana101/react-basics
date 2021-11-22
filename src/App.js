@@ -30,14 +30,14 @@ const App = () => {
         {/* Personal Details APP  */}
         {!showGoalsApp && !showExpenseApp && !showDetailsApp && <button className="button" onClick={openPersonalDetailsAppUI}>Open Personal Details App</button>}
       </div>
-      <div>
+      <React.Fragment>
         {/* Expense APP  */}
         {showExpenseApp && <ExpenseApp control={closeExpenseAppUI} />}
         {/* Goals APP  */}
         {showGoalsApp && <GoalsApp control={closeGoalsAppUI} />}
         {/* Personal Details APP  */}
         {showDetailsApp && <PersonalDetailsApp control={closePersonalDetailsAppUI} />}
-      </div>
+      </React.Fragment>
     </React.Fragment>
   );
 }
